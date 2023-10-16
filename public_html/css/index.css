@@ -1,0 +1,144 @@
+
+
+/* Esto me permite resetear cierto estilos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+body{    
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/dinoFondo.jpg");
+    background-repeat: no-repeat;
+}
+*/
+
+#container{
+    width: 100%;
+
+    /* esto me va a centrar el contenido en la pagina*/
+    margin: 0px auto;
+}
+
+header{
+    /* esto hace al header invisible
+    background-color: rgba(0,0,0,0.0); 
+    */
+    height: 360px;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 1600px;
+
+    /* De esta manera se pone a la misma altura del height de la caja*/
+    line-height: 100px;
+    color: white;
+    border-bottom: 5px solid green;
+    border-style: hidden;
+}
+
+header h1{
+    color: green;
+    text-shadow: 2px 2px 4px #2ecc71;
+    position: relative;
+    top: 30px;
+}
+
+nav{
+    height: 80px; 
+    text-align: center;
+}
+
+nav ul li{
+    /* Sirve para poner los elementos uno al lado del otro*/
+    float: right;
+    list-style: none;
+    margin: 10px;
+    line-height: 35px;
+    position: relative;
+    left: 750px;
+}
+
+a{
+    color: black;
+    text-decoration: none;  
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 7px solid rgb(10, 163, 10);
+    border-radius: 12px;
+}
+
+.clearfix{
+    /* Cuando se flotan los elementos, los elementos de abajo se quedan en su sitio*/
+    clear: both;
+}
+
+/* Este es mi contenido*/
+#content{
+    float: left;
+    width: 80%;
+    background: rgb(219, 224, 230);
+
+    /* Esto le da una altura minima*/
+    min-height: 500px;
+    padding: 40px;
+}
+
+.article{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(29, 28, 28);
+}
+
+/* Este es el espacio entre los contenidos de los articulos*/
+article p{
+    margin-bottom: 20px;
+
+    display: flex;
+}
+
+/* Esto es un ejemplo de herencia. Aqui se selecciona el 1er articulo */
+.article:first-child{
+    border-top: 1px solid rgb(29, 28, 28);
+    padding-top: 25px;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+/* Este es mi panel lateral*/
+aside{    
+    display: flex;
+    flex-direction: column;   
+    flex-wrap: wrap;
+
+    /* Esto se ajusta gracias al calculo*/
+    width: 20%;
+    background-color: white;
+
+    /* Esto le da una altura minima*/
+    min-height: 593px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+aside h2{
+    font-size: 17px;
+}
+
+#boton{
+    width: 75%;
+}
+
+footer span{
+    margin: 21px;
+}
